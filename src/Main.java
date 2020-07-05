@@ -13,22 +13,22 @@ public class Main {
         // like you saw in this video.
 
 
-        Wall wall1= new Wall("West");
-        Wall wall2= new Wall("South");
-        Wall wall3= new Wall("North");
-        Wall wall4= new Wall("East");
-
-
-        Ceiling ceiling= new Ceiling(12,"white");
-
-        Bed bed= new Bed("Moder",4,10,2,1);
-
-        Lamp lamp= new Lamp("Classic",false,75);
-
-        Bedroom bedroom= new Bedroom("Adityas Bedroom",wall1,wall2,wall3,wall4,ceiling,bed,lamp);
-        bedroom.makeBed();
-
-        bedroom.getLamp().turnOn();
+//        Wall wall1= new Wall("West");
+//        Wall wall2= new Wall("South");
+//        Wall wall3= new Wall("North");
+//        Wall wall4= new Wall("East");
+//
+//
+//        Ceiling ceiling= new Ceiling(12,"white");
+//
+//        Bed bed= new Bed("Moder",4,10,2,1);
+//
+//        Lamp lamp= new Lamp("Classic",false,75);
+//
+//        Bedroom bedroom= new Bedroom("Adityas Bedroom",wall1,wall2,wall3,wall4,ceiling,bed,lamp);
+//        bedroom.makeBed();
+//
+//        bedroom.getLamp().turnOn();
 
         /**
          * This problem is related to encapsulation concept of Java.
@@ -44,7 +44,32 @@ public class Main {
         // Decide on the scope, whether to use constructors, and anything else you think is needed.
 
 
-        
+        Printer printer= new Printer(50,true);
+        System.out.println();
+        System.out.println("Initial page count ="+printer.getPagesPrinted());
+        int pagesPrinted= printer.printPages(4);
+        System.out.println("Pages printed was "+pagesPrinted+" ,new total print count for printer= "+printer.getPagesPrinted());
+        pagesPrinted=printer.printPages(2);
+        System.out.println("Pages printed was "+pagesPrinted+" ,new total print count for printer= "+printer.getPagesPrinted());
+
+
+        // Create a base class called Car
+        // It should have a few fields that would be appropriate for a generice car calss.
+        // engine, cylinders, wheels, etc.
+        // Constructor should initialize cylinders (number of) and name, and set wheels to 4
+        // and engine to true. Cylinders and names would be passed parameters.
+        //
+        // Create appropriate getters
+        //
+        // Create some methods like startEngine, accelerate, and brake
+        //
+        // show a message for each in the base class
+        // Now create 3 sub classes for your favorite vehicles.
+        // Override the appropriate methods to demonstrate polymorphism in use.
+        // put all classes in the one java file (this one).
+
+
+
 
     }
 }

@@ -44,17 +44,17 @@ public class Main {
         // Decide on the scope, whether to use constructors, and anything else you think is needed.
 
 
-        Printer printer= new Printer(50,true);
-        System.out.println();
-        System.out.println("Initial page count ="+printer.getPagesPrinted());
-        int pagesPrinted= printer.printPages(4);
-        System.out.println("Pages printed was "+pagesPrinted+" ,new total print count for printer= "+printer.getPagesPrinted());
-        pagesPrinted=printer.printPages(2);
-        System.out.println("Pages printed was "+pagesPrinted+" ,new total print count for printer= "+printer.getPagesPrinted());
+//        Printer printer= new Printer(50,true);
+//        System.out.println();
+//        System.out.println("Initial page count ="+printer.getPagesPrinted());
+//        int pagesPrinted= printer.printPages(4);
+//        System.out.println("Pages printed was "+pagesPrinted+" ,new total print count for printer= "+printer.getPagesPrinted());
+//        pagesPrinted=printer.printPages(2);
+//        System.out.println("Pages printed was "+pagesPrinted+" ,new total print count for printer= "+printer.getPagesPrinted());
 
 
         // Create a base class called Car
-        // It should have a few fields that would be appropriate for a generice car calss.
+        // It should have a few fields that would be appropriate for a generic car class.
         // engine, cylinders, wheels, etc.
         // Constructor should initialize cylinders (number of) and name, and set wheels to 4
         // and engine to true. Cylinders and names would be passed parameters.
@@ -69,7 +69,38 @@ public class Main {
         // put all classes in the one java file (this one).
 
 
+        Car car= new Car("Base Car",4);
+        car.startEngine();
+        car.accelerate();
+        car.brake();
 
+        System.out.println();
+
+        Ferrari ferrari= new Ferrari("Ferrari model",6);
+        ferrari.startEngine();
+        ferrari.accelerate();
+        ferrari.brake();
+
+        System.out.println();
+
+
+        Audi audi= new Audi("Audi model",8);
+        audi.startEngine();
+        audi.accelerate();
+        audi.brake();
+
+        System.out.println();
+
+
+        BMW bmw= new BMW("BMW model",6);
+        bmw.startEngine();
+        bmw.accelerate();
+        bmw.brake();
 
     }
+
+    
+
+
+
 }
